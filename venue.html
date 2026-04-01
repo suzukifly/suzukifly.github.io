@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBCGRK3BX6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LBCGRK3BX6');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Venue &amp; Access – JDRC17</title>
+  <style>
+    .map-embed {
+      width: 100%;
+      height: 380px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      margin-top: .75rem;
+    }
+    .access-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: .75rem;
+    }
+    .access-card {
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1rem 1.25rem;
+    }
+    .access-card .icon { font-size: 1.4rem; margin-bottom: .4rem; }
+    .access-card strong { display: block; margin-bottom: .3rem; }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo-banner">⚠ これはデモサイトです。実際の JDRC17 公式サイトではありません。 / This is a DEMO SITE and not the official JDRC17 website. ⚠</div>
+
+<nav>
+  <div class="nav-inner">
+    <span class="nav-logo">JDRC17</span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About JDRC17</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="abstract.html">Abstract Submission</a></li>
+      <li><a href="participants.html">For Participants</a></li>
+      <li><a href="venue.html" class="active">Venue &amp; Access</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <h1>Venue &amp; Access</h1>
+</div>
+
+<main class="container">
+
+  <section class="section-block">
+    <h2 class="section-title">Venue</h2>
+    <p>
+      <strong>Multi-purpose Digital Hall, West Building 9</strong><br>
+      Ookayama Campus, Institute of Science Tokyo<br>
+      (Formerly Tokyo Institute of Technology)<br>
+      2-12-1 Ookayama, Meguro-ku, Tokyo 152-8550, Japan
+    </p>
+    <p>
+      <strong>東京科学大学 大岡山キャンパス 西9号館 多目的デジタルホール</strong><br>
+      〒152-8550 東京都目黒区大岡山2-12-1
+    </p>
+    <iframe
+      class="map-embed"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.6!2d139.6826!3d35.6038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f49a7e94a8e5%3A0x1a5d6e9a0ed85ab6!2z5p2x5Lqs56eR5a2m5aSn5a2m5aSn5a2m5aSn5a2m!5e0!3m2!1sja!2sjp!4v1700000000000"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Map to Institute of Science Tokyo"
+    ></iframe>
+  </section>
+
+  <section class="section-block">
+    <h2 class="section-title">Access</h2>
+    <div class="access-grid">
+      <div class="access-card">
+        <div class="icon">🚃</div>
+        <strong>By Train</strong>
+        <p>Tokyo Meguro Line<br><strong>Ookayama Station</strong> – 1 min walk</p>
+      </div>
+      <div class="access-card">
+        <div class="icon">🚇</div>
+        <strong>By Subway</strong>
+        <p>Tokyo Metro Namboku Line<br>Tokyo Metro Mita Line<br><strong>Ookayama Station</strong> – 1 min walk</p>
+      </div>
+      <div class="access-card">
+        <div class="icon">🚌</div>
+        <strong>By Bus</strong>
+        <p>Several bus routes stop at Ookayama. Please check the transit app for the latest schedules.</p>
+      </div>
+      <div class="access-card">
+        <div class="icon">🅿️</div>
+        <strong>Parking</strong>
+        <p>No on-site parking for conference attendees. Please use public transport.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <h2 class="section-title">Nearby Hotels</h2>
+    <p>The following areas have hotels within convenient distance of the venue:</p>
+    <ul style="padding-left:1.3rem; line-height:2;">
+      <li>Ookayama</li>
+      <li>Meguro</li>
+      <li>Jiyugaoka</li>
+      <li>Gotanda</li>
+    </ul>
+    <p style="font-size:.87rem; color:var(--text-light);">We recommend booking early, as availability can be limited in November.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 JDRC17 Organizing Committee. All rights reserved.</p>
+  <p style="margin-top:.4rem;"><a href="contact.html">Contact</a></p>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
