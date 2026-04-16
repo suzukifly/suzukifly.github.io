@@ -356,6 +356,41 @@ h3.subsection-title {
   border-radius: 0 4px 4px 0;
 }
 
+/* ===== Sponsors ===== */
+.sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: .5rem;
+}
+
+.sponsor-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  transition: box-shadow .2s;
+}
+
+.sponsor-item:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  text-decoration: none;
+}
+
+.sponsor-item img {
+/* 1pxではなく、ロゴとして適切な高さを指定 */
+  height: auto; 
+  width: 200px; /* 横幅は自動調整 */
+  
+  max-width: 100%; /* 親要素からはみ出さないように */
+  object-fit: contain;
+  display: block;
+}
+
 /* ===== Alert Box ===== */
 .alert {
   background: var(--primary-light);
