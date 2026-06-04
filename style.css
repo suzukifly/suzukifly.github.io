@@ -311,6 +311,11 @@ h3.subsection-title {
 }
 
 /* ===== Tables ===== */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .dates-table {
   width: 100%;
   border-collapse: collapse;
