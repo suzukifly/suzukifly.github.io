@@ -376,6 +376,27 @@ h3.subsection-title {
   margin-top: .2rem;
 }
 
+.keynote-card {
+  border-left: 4px solid var(--accent);
+  padding: 1.4rem 1.6rem;
+}
+
+.keynote-card .talk-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.5;
+  margin-bottom: .8rem;
+}
+
+.keynote-card .name {
+  font-size: 1rem;
+}
+
+.keynote-card .affil {
+  font-size: .85rem;
+}
+
 /* ===== Organizers ===== */
 .organizers-list {
   list-style: none;
