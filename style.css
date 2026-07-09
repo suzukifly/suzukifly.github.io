@@ -351,6 +351,19 @@ h3.subsection-title {
   color: var(--ink);
 }
 
+.dates-table td[rowspan] {
+  text-align: center;
+  vertical-align: middle;
+  background: var(--bg);
+}
+
+.table-subnote {
+  display: inline-block;
+  font-size: .72rem;
+  color: var(--ink-light);
+  margin-top: .15rem;
+}
+
 /* ===== Invited Speakers ===== */
 .speakers-grid {
   display: grid;
