@@ -86,6 +86,21 @@
     .tag-oral    { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
     .tag-poster  { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; }
     .tag-break   { background: #f8fafc; color: #64748b; border: 1px solid #e2e8f0; }
+    .tag-ceremony { background: #f5f3ff; color: #6d28d9; border: 1px solid #ddd6fe; }
+    .tag-joint   { background: #fefce8; color: #a16207; border: 1px solid #fde68a; }
+    .tag-banquet { background: #fdf2f8; color: #be185d; border: 1px solid #fbcfe8; }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem 0;
+      margin-bottom: 1.25rem;
+    }
+    .room {
+      display: block;
+      margin-top: .2rem;
+      font-size: .78rem;
+      color: #64748b;
+    }
   </style>
 </head>
 <body>
@@ -116,23 +131,30 @@
 <main class="container">
 
   <div class="alert">
-    The detailed program will be announced after abstract acceptance notifications.
+    The timetable has been updated (September 30, 2026). The schedule may be subject to minor changes.
   </div>
 
-  <p style="margin-bottom:2rem;">The following is a <strong>tentative schedule</strong>.</p>
+  <div class="legend">
+    <span class="tag tag-ceremony">Ceremony</span>
+    <span class="tag tag-oral">Oral</span>
+    <span class="tag tag-poster">Poster</span>
+    <span class="tag tag-joint">Joint</span>
+    <span class="tag tag-banquet">Banquet</span>
+    <span class="tag tag-break">Break</span>
+  </div>
 
   <!-- Day 1 -->
   <div class="program-day">
     <div class="day-header">Day 1 — November 4 (Wed) / 11月4日（水）</div>
     <table class="program-table">
-        <tbody>
-          <tr><td>12:50–13:00</td><td>Welcome and Introductions</td></tr>
-          <tr><td>13:00–14:15</td><td><span class="tag tag-oral">Oral</span> Oral Session 1 </td></tr>
-          <tr><td>14:25–15:25</td><td><span class="tag tag-oral">Oral</span> Oral Session 2 </td></tr>
-          <tr><td>15:35–16:50</td><td><span class="tag tag-oral">Oral</span> Oral Session 3 </td></tr>
-          <tr><td>17:00–18:00</td><td><span class="tag tag-oral">Oral</span> Oral Session 4 </td></tr>
-          <tr><td>18:10–19:40</td><td><span class="tag tag-poster">Poster</span> Poster presentation</td></tr>
-        </tbody>
+      <tbody>
+        <tr><td>12:50–13:00</td><td><span class="tag tag-ceremony">Ceremony</span> Welcome</td></tr>
+        <tr><td>13:00–14:15</td><td><span class="tag tag-oral">Oral</span> Development and Morphogenesis I</td></tr>
+        <tr><td>14:25–15:25</td><td><span class="tag tag-oral">Oral</span> Development and Morphogenesis II + Evo-Devo</td></tr>
+        <tr><td>15:35–16:35</td><td><span class="tag tag-oral">Oral</span> Cell Biology and Signal Transduction</td></tr>
+        <tr><td>16:45–17:45</td><td><span class="tag tag-oral">Oral</span> Cell Biology / Homeostasis</td></tr>
+        <tr><td>18:00–19:30</td><td><span class="tag tag-poster">Poster</span> Poster Session A (Group A)<span class="room">Collaboration Room</span></td></tr>
+      </tbody>
     </table>
   </div>
 
@@ -141,15 +163,15 @@
     <div class="day-header">Day 2 — November 5 (Thu) / 11月5日（木）</div>
     <table class="program-table">
       <tbody>
-        <tr><td>09:00–10:00</td><td><span class="tag tag-oral">Oral</span> Oral Session 5 </td></tr>
-        <tr><td>10:10–11:10</td><td><span class="tag tag-oral">Oral</span> Oral Session 6 </td></tr>
-        <tr><td>11:20–12:20</td><td><span class="tag tag-oral">Oral</span> Oral Session 7 </td></tr>
-        <tr><td>12:30–13:30</td><td><span class="tag tag-break">Break</span> Lunch Break</td></tr>
-        <tr><td>13:40–15:10</td><td><span class="tag tag-poster">Poster</span> Poster Presentation</td></tr>
-        <tr><td>15:20–16:20</td><td><span class="tag tag-oral">Oral</span> Oral Session 8 </td></tr>
-        <tr><td>16:30–17:30</td><td><span class="tag tag-oral">Oral</span> Oral Session 9 </td></tr>
-        <tr><td>17:40–18:40</td><td><span class="tag tag-keynote">Keynote</span> Keynote Lecture</td></tr>
-        <tr><td>19:00–21:00</td><td> Conference Dinner / Reception</td></tr>
+        <tr><td>08:30–09:15</td><td><span class="tag tag-oral">Oral</span> Homeostasis</td></tr>
+        <tr><td>09:25–10:25</td><td><span class="tag tag-oral">Oral</span> Ageing and Diseases I</td></tr>
+        <tr><td>10:35–11:35</td><td><span class="tag tag-oral">Oral</span> Ageing and Diseases II</td></tr>
+        <tr><td>11:35–12:50</td><td><span class="tag tag-break">Break</span> Lunch Break</td></tr>
+        <tr><td>12:50–14:20</td><td><span class="tag tag-poster">Poster</span> Poster Session B (Group B)<span class="room">Collaboration Room</span></td></tr>
+        <tr><td>14:30–16:00</td><td><span class="tag tag-oral">Oral</span> Neuroscience and Behavior I</td></tr>
+        <tr><td>16:10–17:25</td><td><span class="tag tag-oral">Oral</span> Neuroscience and Behavior II</td></tr>
+        <tr><td>17:35–18:35</td><td><span class="tag tag-keynote">Keynote</span> Keynote Lecture — Prof. Tadashi Uemura (Kyoto University)</td></tr>
+        <tr><td>19:00–21:00</td><td><span class="tag tag-banquet">Banquet</span> Banquet<span class="room">Midorigaoka Building 6</span></td></tr>
       </tbody>
     </table>
   </div>
@@ -159,14 +181,20 @@
     <div class="day-header">Day 3 — November 6 (Fri) / 11月6日（金）</div>
     <table class="program-table">
       <tbody>
-        <tr><td>09:00–10:00</td><td><span class="tag tag-oral">Oral</span> Oral Session 10 </td></tr>
-        <tr><td>10:10–11:30</td><td><span class="tag tag-oral">Oral</span> Oral Session 11 </td></tr>
-        <tr><td>11:30–13:00</td><td><span class="tag tag-break">Break</span> Lunch Break</td></tr>
-        <tr><td>13:00–14:00</td><td> General Meeting &amp; Daigoro Moriwaki Award Ceremony</td></tr>
-        <tr><td>14:30–18:30</td><td> Taiwan-Japan Joint Drosophila Meeting</td></tr>
+        <tr><td>08:30–10:00</td><td><span class="tag tag-oral">Oral</span> Neuroscience and Behavior III</td></tr>
+        <tr><td>10:10–11:35</td><td><span class="tag tag-oral">Oral</span> Special Lectures (SL1–SL6)</td></tr>
+        <tr><td>11:35–12:50</td><td><span class="tag tag-break">Break</span> Lunch Break</td></tr>
+        <tr><td>12:50–14:10</td><td><span class="tag tag-ceremony">Ceremony</span> General Meeting &amp; Moriwaki–Daigoro Award Ceremony<span class="room">Held in Japanese</span></td></tr>
+        <tr><td>14:30–15:30</td><td><span class="tag tag-joint">Joint</span> Japan-Taiwan Fly Symposium 2026 I</td></tr>
+        <tr><td>15:30–15:50</td><td><span class="tag tag-break">Break</span> Break</td></tr>
+        <tr><td>15:50–16:50</td><td><span class="tag tag-joint">Joint</span> Japan-Taiwan Fly Symposium 2026 II</td></tr>
+        <tr><td>16:50–17:10</td><td><span class="tag tag-break">Break</span> Break</td></tr>
+        <tr><td>17:10–18:30</td><td><span class="tag tag-joint">Joint</span> Japan-Taiwan Fly Symposium 2026 III<span class="room">Including an Invited Lecture (30 min) and Closing Remarks (18:25–18:30)</span></td></tr>
       </tbody>
     </table>
   </div>
+
+  <p style="font-size:.87rem; color:var(--text-light);">Unless otherwise noted, all sessions are held in the Digital Multi-purpose Hall, West Building 9.</p>
 
 </main>
 
