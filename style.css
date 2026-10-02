@@ -428,10 +428,9 @@ h3.subsection-title {
 
 /* ===== Sponsors ===== */
 .sponsor-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 1rem;
-  align-items: center;
 }
 
 .sponsor-item {
@@ -440,7 +439,7 @@ h3.subsection-title {
   justify-content: center;
   background: var(--bg);
   border-radius: 8px;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.25rem;
   transition: box-shadow .2s;
 }
 
@@ -449,13 +448,37 @@ h3.subsection-title {
   text-decoration: none;
 }
 
+/* Every logo gets the same box; object-fit keeps its aspect ratio inside it */
 .sponsor-item img {
-  height: auto;
-  width: 180px;
-  max-width: 100%;
+  width: 100%;
+  height: 64px;
   object-fit: contain;
   display: block;
 }
+
+/* Compact sponsor strip (top page) */
+.sponsor-strip { padding: 1.5rem 2.5rem; }
+
+.sponsor-strip-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: .9rem;
+}
+
+.sponsor-strip-label {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+}
+
+.sponsor-strip-head a { font-size: .78rem; }
+
+.sponsor-strip .sponsor-grid { gap: .75rem; }
+.sponsor-strip .sponsor-item { padding: .75rem 1rem; }
+.sponsor-strip .sponsor-item img { height: 44px; }
 
 /* ===== Alert / Announcement ===== */
 .alert {
@@ -560,4 +583,5 @@ footer a:hover { color: #fff; text-decoration: none; }
   .hero-info-card { min-width: 100%; }
   .container { padding: 2rem 1rem; }
   .section-block { padding: 1.5rem 1.25rem; margin-bottom: 1rem; }
+  .sponsor-strip { padding: 1.25rem; }
 }
