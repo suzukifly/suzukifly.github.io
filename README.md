@@ -38,6 +38,7 @@ Each logo belongs to its respective company and is used only to credit JDRC17 sp
 | `images/oxford_instruments_logo.png` | Oxford Instruments | https://www.oxinst.com/ |
 | `images/zeiss_logo.svg` | Carl Zeiss Co., Ltd. | https://www.zeiss.co.jp/ |
 | `images/drobot_logo.png` | DroBot Biotechnology | https://www.drobot.com.tw/ |
+| `images/nbrp_logo.jpg` | National BioResource Project (NBRP) | https://nbrp.jp/en/public/bio/nbrp-logo-pr-materials-en |
 
 To add a sponsor, put the logo in `images/`, add an `<a class="sponsor-item">` to the `.sponsor-grid` in both pages, and add a row above. Card and logo-box sizes are set in `style.css` (`.sponsor-item img`), so no per-logo sizing is needed.
 

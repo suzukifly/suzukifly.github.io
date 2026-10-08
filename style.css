@@ -456,6 +456,9 @@ h3.subsection-title {
   display: block;
 }
 
+/* Logos supplied on a white background blend into the card instead of showing a white box */
+.sponsor-item img.logo-on-white { mix-blend-mode: multiply; }
+
 /* Compact sponsor strip (top page) */
 .sponsor-strip { padding: 1.5rem 2.5rem; }
 
