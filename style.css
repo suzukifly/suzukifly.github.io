@@ -479,8 +479,9 @@ h3.subsection-title {
 
 .sponsor-strip-head a { font-size: .78rem; }
 
-.sponsor-strip .sponsor-grid { gap: .75rem; }
-.sponsor-strip .sponsor-item { padding: .75rem 1rem; }
+/* Narrower cards than the About page so the whole strip stays on one row on desktop */
+.sponsor-strip .sponsor-grid { grid-template-columns: repeat(auto-fit, minmax(88px, 1fr)); gap: .75rem; }
+.sponsor-strip .sponsor-item { padding: .75rem; }
 .sponsor-strip .sponsor-item img { height: 44px; }
 
 /* ===== Alert / Announcement ===== */
