@@ -17,6 +17,7 @@ Website for JDRC17, jointly held with Japan-Taiwan Fly Symposium 2026.
 | `participants.html` | Presentation guidelines and social events |
 | `venue.html` | Venue information and access |
 | `program.html` | Tentative conference program |
+| `awards.html` | Presentation award recipients |
 | `contact.html` | Contact information (JDRC17 Office) |
 
 ## Local preview
